@@ -522,6 +522,7 @@ p {
 
 .footer-modal-field {
     margin-right: 24px;
+    overflow: hidden;
 }
 
 .footer-modal-input {
@@ -664,6 +665,10 @@ p {
 
 .modal-form-field {
     margin-bottom: 8px;
+}
+
+.textarea{
+    margin-bottom: 5px;
 }
 
 .modal-form-input {
