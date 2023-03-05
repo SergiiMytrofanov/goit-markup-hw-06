@@ -345,7 +345,7 @@
                     marketing
                     & growth solutions.</p>
             </div>
-            <div class="footer-right">
+            <div class="footer-center">
                 <p class="social-media">Social media</p>
                 <ul class="footer-socials list">
                     <li class="footer-socials-item">
@@ -378,9 +378,24 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-right">
+                <form class="footer-modal">
+                    <p class="footer-subscribe-title">Subscribe</p>
+                    <label class="footer-modal-field">
+                        <span class="footer-modal-input-wrapper">
+                            <input type="email" name="E-mail" class="footer-modal-input" required>
+                        </span>
+                    </label>
+                    <button type="submit" class="footer-form-button"><span class="footer-button-text">Subscribe</span>
+                        <span class="button-icon-span"><svg class="button-icon" width="24px" height="20px">
+                                <use href="./images/icons.svg#send"></use>
+                            </svg></span></button>
+                </form>
+            </div>
         </div>
+
     </footer>
-    <div class="backdrop-hero " data-modal>
+    <div class="backdrop-hero is-hidden" data-modal>
         <div class="modal-hero">
             <button class="hero-button-close" data-modal-close>
                 <svg class="modal-hero-icon" width="8px" height="8px">
@@ -391,8 +406,8 @@
                 <label class="modal-form-field">
                     <span class="modal-form-input-desc">Name</span>
                     <span class="modal-form-input-wrapper">
-                        <input type="text" name="user_name" class="modal-form-input" required pattern="[a-zA-Zа-яА-Я]+"
-                            minlength="2" title="Name Surname">
+                        <input type="text" name="user_name" class="modal-form-input" required
+                            pattern="[a-zA-Zа-яА-Я\s]+" minlength="2" title="Name Surname">
                         <svg class="modal-input-icon" width="12px" height="12px">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
@@ -431,6 +446,5 @@
     </div>
     <script src="./js/modal.js"></script>
 </body>
-<!-- is-hidden -->
 
 </html>
