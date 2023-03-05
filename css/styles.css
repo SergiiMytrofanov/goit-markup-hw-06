@@ -510,6 +510,7 @@ p {
     fill: var(--background-secondary);
 }
 
+/* footer subcribe form */
 
 .footer-subscribe-title {
     margin-bottom: 16px;
@@ -568,7 +569,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--text-white);
-
 }
 
 .button-icon-span {
@@ -576,7 +576,6 @@ p {
 }
 
 .button-icon {
-
     fill: var(--text-white);
 }
 
