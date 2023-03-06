@@ -630,6 +630,7 @@ p {
     top: 24px;
     right: 24px;
     border-radius: 12px;
+    cursor: pointer;
 
 
     width: 24px;
@@ -668,7 +669,7 @@ p {
 }
 
 .textarea{
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 .modal-form-input {
@@ -718,12 +719,11 @@ p {
     letter-spacing: 0.04em;
     color: var(--customers);
 
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
-
-
 .modal-form-message {
+    display: block;
     padding: 8px 16px;
     width: 100%;
     height: 120px;
@@ -755,20 +755,29 @@ p {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 .modal-form-check-desc::before {
+    content: "";
     display: block;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--primary-text-color);
     border-radius: 2px;
-    content: "";
+    
     cursor: pointer;
     margin-right: 8px;
 }
 
-.modal-form-check:focus+.modal-form-check-desc::before {
+
+.modal-form-check:checked+.modal-form-check-desc::before {
+    background-color: var(--text-white);
+    border: 1.25px solid var(--primary-text-color);
+    border-radius: 2px;
+}
+
+.modal-form-check+.modal-form-check-desc::before {
     background-color: var(--btn-accent);
     border: 1.25px solid var(--btn-accent);
     border-radius: 2px;
@@ -777,13 +786,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.modal-form-check:checked+.modal-form-check-desc::before {
-    background-color: var(--text-white);
-    border: 1.25px solid var(--primary-text-color);
-    border-radius: 2px;
-}
-
 .privacy-policy-link {
     font-size: 12px;
     line-height: 1.17;
